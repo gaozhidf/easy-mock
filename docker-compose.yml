@@ -1,0 +1,19 @@
+services:
+  app:
+    image: 'easymock:latest'
+    ports:
+      - '7300:7300'
+    environment:
+      - MONGODB_URL=mongodb://mongo/easy-mock
+      - REDIS_HOST=redis
+    depends_on:
+      - redis
+      - mongo
+  redis:
+    image: 'redis:5.0-alpine'
+    # ports:
+    #   - '6379:6379'
+  mongo:
+    image: 'mongo:4-focal'
+    # ports:
+    #   - '27017:27017'
