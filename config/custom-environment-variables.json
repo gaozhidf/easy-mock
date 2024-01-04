@@ -1,6 +1,10 @@
 {
     "db": "MONGODB_URL",
     "redis": {
-      "host": "REDIS_HOST"
+        "keyPrefix": "[Easy Mock]",
+        "port": "REDIS_PORT",
+        "host": "REDIS_HOST",
+        "password": "REDIS_PASSWORD",
+        "db": "REDIS_DB"
     }
   }
