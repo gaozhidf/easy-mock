@@ -1,0 +1,6 @@
+{
+    "db": "MONGODB_URL",
+    "redis": {
+      "host": "REDIS_HOST"
+    }
+  }
